@@ -305,7 +305,7 @@ gulp.task('drupal-deploy', function () {
   // make sure to use the gulp from node_modules and not a different version
   runSequence = require('run-sequence').use(gulp);
   // Change the deploy branch
-  config.deployment.branch = "dev-assets";
+  config.deployment.branch = "master";
   // run default to build the code and then publish it to our branch
   runSequence('default', 'publish');
 });
